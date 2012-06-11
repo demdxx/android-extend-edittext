@@ -33,7 +33,7 @@ Import the namespace to the application.
 Params
 ------
 
-- **validate**: combination of flags validation. **regexp|numeric|alpha|alphaNumeric|email|creditCard|phone|domainName|ipAddress|webUrl|empty**. Default: **regexp**.
+- **validate**: combination of flags validation. **regexp | numeric | alpha | alphaNumeric | email | creditCard | phone | domainName | ipAddress | webUrl | empty**. Default: **regexp**.
 - **validatorRegexp**: regular expression valid in the presence of the flag **regexp**.
 - **errorString**: custom error message.
 - **emptyErrorString**: custom empty value error message.
@@ -73,7 +73,7 @@ Example
 An example of validation of the code of Java.
 
 ```java
-	public void onClickNext(View v) {
+	public void onClick(View v) {
 		ExtEditText[] field	= { mName, mLastname, mCity, mCountry, mPhone };
 
 		boolean valid = true;
