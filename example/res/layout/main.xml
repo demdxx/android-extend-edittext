@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wiget="http://schemas.android.com/apk/res/com.extend.example"
+    android:id="@+id/scroll" android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	
+	    <com.extend.wiget.ExtEditText
+	        wiget:validate="numeric|empty"
+	        android:id="@+id/extEditText1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="Numeric"
+	        android:text="">
+	    </com.extend.wiget.ExtEditText>
+	
+	    <com.extend.wiget.ExtEditText
+	        wiget:validate="alpha|empty"
+	        android:id="@+id/extEditText2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="Alphabite"
+	        android:text="">
+	    </com.extend.wiget.ExtEditText>
+	
+	    <com.extend.wiget.ExtEditText
+	        wiget:validate="alphaNumeric|empty"
+	        android:id="@+id/extEditText3"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="Alphabite and Numeric"
+	        android:text="">
+	    </com.extend.wiget.ExtEditText>
+	
+	    <com.extend.wiget.ExtEditText
+	        wiget:validate="email|empty"
+	        android:id="@+id/extEditText4"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="Email"
+	        android:text="">
+	    </com.extend.wiget.ExtEditText>
+	
+	    <com.extend.wiget.ExtEditText
+	        wiget:validate="creditCard|empty"
+	        android:id="@+id/extEditText5"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="Credit Card Number"
+	        android:text="">
+	    </com.extend.wiget.ExtEditText>
+	
+	    <com.extend.wiget.ExtEditText
+	        wiget:validate="phone|empty"
+	        android:id="@+id/extEditText6"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="Phone number"
+	        android:text="">
+	    </com.extend.wiget.ExtEditText>
+	
+	    <com.extend.wiget.ExtEditText
+	        wiget:validate="domainName|empty"
+	        android:id="@+id/extEditText7"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="Domain Name"
+	        android:text="">
+	    </com.extend.wiget.ExtEditText>
+	
+	    <com.extend.wiget.ExtEditText
+	        wiget:validate="ipAddress|empty"
+	        android:id="@+id/extEditText8"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="IP Address"
+	        android:text="">
+	    </com.extend.wiget.ExtEditText>
+	
+	    <com.extend.wiget.ExtEditText
+	        wiget:validate="webUrl|empty"
+	        android:id="@+id/extEditText9"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="Web URL"
+	        android:text="">
+	    </com.extend.wiget.ExtEditText>
+	
+	    <com.extend.wiget.ExtEditText
+	        wiget:validate="regexp|empty"
+	        wiget:validatorRegexp="^\\w+$"
+	        android:id="@+id/extEditText10"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="Regular expression"
+	        android:text="">
+	    </com.extend.wiget.ExtEditText>
+	
+	    <com.extend.wiget.ExtEditText
+	        wiget:validate="regexp|numeric|alpha|alphaNumeric|email|creditCard|phone|domainName|ipAddress|webUrl"
+	        wiget:validatorRegexp="regexp|empty"
+	        wiget:errorString="Custom error message!"
+	        wiget:emptyErrorString="Custom empty error message!"
+	        wiget:auto="true"
+	        android:id="@+id/extEditText11"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="Custom validations"
+	        android:text="">
+	    </com.extend.wiget.ExtEditText>
+	
+	</LinearLayout>
+</ScrollView>
