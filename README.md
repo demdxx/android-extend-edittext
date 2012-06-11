@@ -78,7 +78,7 @@ An example of validation of the code of Java.
 
 		boolean valid = true;
 		for (ExtEditText field: allFields) {
-			valid = field.testValidity() && valid;
+			valid = field.isValid() && valid;
 		}
 		
 		if (valid) {
