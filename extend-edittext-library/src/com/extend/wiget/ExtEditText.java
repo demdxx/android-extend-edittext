@@ -184,7 +184,7 @@ public class ExtEditText extends EditText {
 	 * Check validate
 	 * @return
 	 */
-	protected boolean isValid() {
+	public boolean isValid() {
 		if (getText().toString().length()<1) {
 			if (emptyAllowed) {
 				return true;
